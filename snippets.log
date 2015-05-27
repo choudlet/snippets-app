@@ -52,3 +52,11 @@ ERROR:root:FIXME: Unimplemented - put('snake', 'stupid garden thingy')
 INFO:root:Constructing Parser
 DEBUG:root:Constructing put subparser
 ERROR:root:FIXME: Unimplemented - get('snake')
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+ERROR:root:FIXME: Unimplemented - put('snake', 'stupid garden thingy')
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+ERROR:root:FIXME: Unimplemented - get('snake')
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
