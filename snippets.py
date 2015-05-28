@@ -30,8 +30,12 @@ def get(name):
 
     Returns the snippet.
     """
-    logging.error("FIXME: Unimplemented - get({!r})".format(name))
-    return "" 
+    logging.info("Retrieving snippet {!r}".format(name))
+   	cursor = connection.cursor()
+	command = "select keyword, message from snippets where keyword='%s'"
+	cursor.execute(command, name)
+  	cursor.fetchone()
+    return snippet
     
 def main():
 	"""Main Function"""
