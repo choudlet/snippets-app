@@ -24,17 +24,18 @@ def put(name, snippet):
     return name, snippet
     
 def get(name):
-    """Retrieve the snippet with a given name.
+    """
+    Retrieve the snippet with a given name.
 
     If there is no such snippet - return FIXME error
 
     Returns the snippet.
     """
     logging.info("Retrieving snippet {!r}".format(name))
-   	cursor = connection.cursor()
-	command = "select keyword, message from snippets where keyword='%s'"
-	cursor.execute(command, name)
-  	cursor.fetchone()
+    cursor = connection.cursor()
+    command = "select keyword, message from snippets where keyword='%s'"
+    cursor.execute(command, name)
+    cursor.fetchone()
     return snippet
     
 def main():
