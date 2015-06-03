@@ -71,3 +71,50 @@ DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Connecting to PostgreSQL
 DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Storing snippet 'CAR': "a thing to freakin' drive"
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Storing snippet 'ferret': 'a little friend, a weasel'
+DEBUG:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'ferret'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
