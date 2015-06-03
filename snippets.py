@@ -49,6 +49,7 @@ def main():
 	put_parser.add_argument("name", help="The name of the snippet")
 	put_parser.add_argument("snippet", help="The snippet text")
 	
+	#subparser for the get command
 	get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
 	get_parser.add_argument("name", help="name of the snippet you want")
 	

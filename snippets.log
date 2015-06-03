@@ -118,3 +118,28 @@ DEBUG:root:Database connection established.
 INFO:root:Constructing Parser
 DEBUG:root:Constructing put subparser
 INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
