@@ -381,3 +381,88 @@ INFO:root:Constructing Parser
 DEBUG:root:Constructing put subparser
 INFO:root:Retrieving snippet 'coffee'
 INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'reba'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'reba'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'reba'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'reba'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'reba'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'reba'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'fish'
+INFO:root:Snippet fetched successfully
+ERROR:root:Tried to get 'fish' snippet but does not exist!
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'fish'
+ERROR:root:Tried to get 'fish' snippet but does not exist!
+INFO:root:Snippet fetched successfully
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'fish'
+ERROR:root:Tried to get 'fish' snippet but does not exist!
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Storing snippet 'CAR': 'ting for lover'
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Storing snippet 'CAR': 'ting for lover'
+INFO:root:Snippet stored successfully.
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing Parser
+DEBUG:root:Constructing put subparser
+INFO:root:Retrieving snippet 'CAR'
+INFO:root:Snippet fetched successfully

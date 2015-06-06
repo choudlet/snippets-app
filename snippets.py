@@ -16,8 +16,13 @@ def put(name, snippet):
     """
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     cursor = connection.cursor()
-    command ="insert into snippets values (%s, %s);"
-    cursor.execute(command, (name, snippet))
+    try:
+    	command ="insert into snippets values (%s, %s);"
+    	cursor.execute(command, (name, snippet))
+    except psycopg2.IntegrityError as e:
+    	connection.rollback()
+    	command = "update snippets set message=%s where keyword=%s"
+    	cursor.execute(command, (snippet, name))
     connection.commit()
     logging.info("Snippet stored successfully.")
     return name, snippet
@@ -25,20 +30,21 @@ def put(name, snippet):
 def get(name):
     """
     Retrieve the snippet with a given name.
-    If there is no such snippet - return FIXME error
+    If there is no such snippet - return error
     Returns the snippet.
     """
     logging.info("Retrieving snippet {!r}".format(name))
     cursor = connection.cursor()
-    command = "select message from snippets where keyword='coffee';"
-    print name
     cursor.execute("select message from snippets where keyword=%s", (name,))
     message = cursor.fetchone()
-    cursor.fetchone()
-    connection.commit()
-    logging.info("Snippet fetched successfully")
-    print message
-    return message
+    if not message:
+    	logging.error("Tried to get {!r} snippet but does not exist!".format(name))
+    	print "That doesn't exist you fool!"
+    else:
+    	cursor.fetchone()
+   	connection.commit()    	
+   	logging.info("Snippet fetched successfully")
+    	return message[0]
     
 def main():
 	"""Main Function"""
@@ -62,7 +68,6 @@ def main():
 	arguments = vars(arguments)
 	command = arguments.pop("command")
 	
-	print arguments
 	if command == "put":
 		name, snippet = put(**arguments)
 		print ("Stored {!r} as {!r}".format(snippet, name))
