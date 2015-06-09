@@ -37,15 +37,25 @@ def get(name):
     cursor = connection.cursor()
     cursor.execute("select message from snippets where keyword=%s", (name,))
     message = cursor.fetchone()
+    connection.commit()  
     if not message:
     	logging.error("Tried to get {!r} snippet but does not exist!".format(name))
     	print "That doesn't exist you fool!"
     else:
-    	cursor.fetchone()
-   	connection.commit()    	
+    	cursor.fetchone()  	
    	logging.info("Snippet fetched successfully")
     	return message[0]
-    
+def catalog():
+	"""
+	List previously created snippets
+	"""
+	logging.info("Retrieving catalog")
+	cursor = connection.cursor()
+	cursor.execute("select keyword from snippets order by keyword asc")
+	rows = cursor.fetchall()
+	for row in rows:
+		print row
+	
 def main():
 	"""Main Function"""
 	logging.info("Constructing Parser")
@@ -63,6 +73,9 @@ def main():
 	get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
 	get_parser.add_argument("name", help="name of the snippet you want")
 	
+	#subparser for the catalog command
+	catalog_parser = subparsers.add_parser("catalog", help="List catalog of prev. stored snippets")
+	
 	arguments = parser.parse_args(sys.argv[1:])
 	#Convert parsed arguments from Namespace to dictionary
 	arguments = vars(arguments)
@@ -74,6 +87,9 @@ def main():
 	elif command == "get":
 		name = get(**arguments)
 		print ("Retrieved snippet {!r}".format(name))
+	elif command == "catalog":
+		catalog()
+		print "These are all the current keywords in the database"
 
 if __name__ == "__main__":
 	main()
